@@ -1,0 +1,6 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Console]
+"QuickEdit"=dword:1
+"ScreenBufferSize"=dword:12c0140
+"FaceName"="Lucida Console"

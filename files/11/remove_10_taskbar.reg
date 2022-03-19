@@ -1,0 +1,5 @@
+; based on windows_10_taskbar.org
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell\Update\Packages]
+"UndockingDisabled"=dword:00000000
