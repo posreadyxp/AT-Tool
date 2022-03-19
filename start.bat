@@ -17,6 +17,14 @@ echo   A:::::A               A:::::A  T:::::::::T                 T:::::::::T   
 echo  A:::::A                 A:::::A T:::::::::T                 T:::::::::T    oo:::::::::::oo  oo:::::::::::oo l::::::l
 echo AAAAAAA                   AAAAAAATTTTTTTTTTT                 TTTTTTTTTTT      ooooooooooo      ooooooooooo   llllllll
 
+if %errorlevel%==0 (
+   goto start
+) else (
+   echo Please, open with a administrator privileges!!
+   ping -n 3 127.0.0.1 >NUL
+   exit
+)
+
 :start
 echo Enter a one:
 echo.
@@ -37,7 +45,7 @@ if "%ent%"=="1" (
    goto windows11
 ) else if "%ent%"=="5" (
    echo Bye!!
-   timeout /t 3 /NOBREAK >NUL
+   ping -n 3 127.0.0.1 >NUL
    exit
 ) else goto start 
 
