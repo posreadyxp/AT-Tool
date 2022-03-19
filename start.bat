@@ -16,6 +16,9 @@ echo    A:::::A             A:::::A   TT:::::::TT                 TT:::::::TT   
 echo   A:::::A               A:::::A  T:::::::::T                 T:::::::::T   o:::::::::::::::oo:::::::::::::::ol::::::l
 echo  A:::::A                 A:::::A T:::::::::T                 T:::::::::T    oo:::::::::::oo  oo:::::::::::oo l::::::l
 echo AAAAAAA                   AAAAAAATTTTTTTTTTT                 TTTTTTTTTTT      ooooooooooo      ooooooooooo   llllllll
+echo.
+echo Repository: https://github.com/posreadyxp/AT-Tool
+echo.
 
 if %errorlevel%==0 (
    goto start
