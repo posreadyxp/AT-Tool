@@ -2,8 +2,9 @@
 
 Automized tool for tweaks your system
 
-**Supports:**
+**Tweaks for:**
 
+- Windows 2000
 - Windows XP
 - Windows 7
 - Windows 10
