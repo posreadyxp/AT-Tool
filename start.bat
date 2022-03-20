@@ -1,21 +1,6 @@
 @echo off
-                                                                                                                     
-echo                AAA         TTTTTTTTTTTTTTTTTTTTTTT     TTTTTTTTTTTTTTTTTTTTTTT                               lllllll 
-echo               A:::A        T:::::::::::::::::::::T     T:::::::::::::::::::::T                               l:::::l 
-echo              A:::::A       T:::::::::::::::::::::T     T:::::::::::::::::::::T                               l:::::l 
-echo             A:::::::A      T:::::TT:::::::TT:::::T     T:::::TT:::::::TT:::::T                               l:::::l 
-echo            A:::::::::A     TTTTTT  T:::::T  TTTTTT     TTTTTT  T:::::T  TTTTTTooooooooooo      ooooooooooo    l::::l 
-echo           A:::::A:::::A            T:::::T                     T:::::T      oo:::::::::::oo  oo:::::::::::oo  l::::l 
-echo          A:::::A A:::::A           T:::::T                     T:::::T     o:::::::::::::::oo:::::::::::::::o l::::l 
-echo         A:::::A   A:::::A          T:::::T                     T:::::T     o:::::ooooo:::::oo:::::ooooo:::::o l::::l 
-echo        A:::::A     A:::::A         T:::::T                     T:::::T     o::::o     o::::oo::::o     o::::o l::::l 
-echo       A:::::AAAAAAAAA:::::A        T:::::T                     T:::::T     o::::o     o::::oo::::o     o::::o l::::l 
-echo      A:::::::::::::::::::::A       T:::::T                     T:::::T     o::::o     o::::oo::::o     o::::o l::::l 
-echo     A:::::AAAAAAAAAAAAA:::::A      T:::::T                     T:::::T     o::::o     o::::oo::::o     o::::o l::::l 
-echo    A:::::A             A:::::A   TT:::::::TT                 TT:::::::TT   o:::::ooooo:::::oo:::::ooooo:::::ol::::::l
-echo   A:::::A               A:::::A  T:::::::::T                 T:::::::::T   o:::::::::::::::oo:::::::::::::::ol::::::l
-echo  A:::::A                 A:::::A T:::::::::T                 T:::::::::T    oo:::::::::::oo  oo:::::::::::oo l::::::l
-echo AAAAAAA                   AAAAAAATTTTTTTTTTT                 TTTTTTTTTTT      ooooooooooo      ooooooooooo   llllllll
+
+echo AT-TOOL
 echo.
 echo Repository: https://github.com/posreadyxp/AT-Tool
 echo.
