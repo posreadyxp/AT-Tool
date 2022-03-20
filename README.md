@@ -11,7 +11,7 @@ Automized tool for tweaks your system
 
 **How To Use?**
 
-You need start py file (in cmd) with administrator privileges! (else program exited)
+You need start py file (in cmd) with administrator privileges! (else program exited) or use "start.bat" file (supports ??Windows 2000?? Windows XP, 7, 8, 10)
 
 **How I help with it?**
 
