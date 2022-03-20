@@ -72,55 +72,55 @@ echo [14] - Return to menu
 echo.
 set /p check=">>> "
 if "%check%"=="1" (
-    start "files/XP/classic_controlpanel.reg"
+    start files\XP\classic_controlpanel.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="2" (
-    start "files/XP/new_controlpanel.reg"
+    start files\XP\new_controlpanel.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="3" (
-    start "files/XP/copy_big.reg"
+    start files\XP\copy_big.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="4" (
-    start "files/XP/del_links.reg"
+    start files\XP\del_links.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="5" (
-    start "files/XP/disable_ini_cache.reg"
+    start files\XP\disable_ini_cache.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="6" (
-    start "files/XP/enable_ini_cache.reg"
+    start files\XP\enable_ini_cache.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="7" (
-    start "files/XP/disable_SFC.reg"
+    start files\XP\disable_SFC.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="8" (
-    start "files/XP/enable_16bit.reg"
+    start files\XP\enable_16bit.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="9" (
-    start "files/XP/disable_16bit.reg"
+    start files\XP\disable_16bit.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="10" (
-    start "files/XP/logon_new.reg"
+    start files\XP\logon_new.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="11" (
-    start "files/XP/logon_old.reg"
+    start files\XP\logon_old.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="12" (
-    start "files/XP/regDone.reg"
+    start files\XP\regDone.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="13" (
-    start "files/XP/ru_all.reg"
+    start files\XP\ru_all.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="14" (
@@ -142,35 +142,35 @@ echo [9] - Exit
 echo.
 set /p a=">>> "
 if "%a%"=="1" (
-    start "files/7/remove_ini_cache.reg"
+    start files\7\remove_ini_cache.reg
     ping -n 3 127.0.0.1 >NUL
     goto start 
 ) else if "%a%"=="2" (
-    start "files/7/add_ini_cache.reg"
+    start files\7\add_ini_cache.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%a%"=="3" (
-    start "files/7/disable_autoplay.reg"
+    start files\7\disable_autoplay.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%a%"=="4" (
-    start "files/7/enable_autoplay.reg"
+    start files\7\enable_autoplay.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%a%"=="5" (
-    start "files/7/disable_bsod_reset.reg"
+    start files\7\disable_bsod_reset.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "a%"=="6" (
-    start "files/7/disable_restore.reg"
+    start files\7\disable_restore.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%a%"=="7" (
-    start "files/7/InstallTakeOwnership.reg"
+    start files\7\InstallTakeOwnership.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%a%"=="8" (
-    start "files/7/rem_spy_updates.cmd"
+    start files\7\rem_spy_updates.cmd
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%a%"=="9" (
@@ -199,59 +199,59 @@ echo [15] - Exit
 echo.
 set /p inp=">>> "
 if "%inp%"=="1" (
-    start "files/10/remove_ini_cache.reg"
+    start files\10\remove_ini_cache.reg
     ping -n 3 127.0.0.1 >NUL
     goto start 
 ) else if "%inp%"=="2" (
-    start "files/10/add_ini_cache.reg"
+    start files\10\add_ini_cache.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="3" (
-    start "files/10/Add_Copy_path_to_context_menu.reg"
+    start files\10\Add_Copy_path_to_context_menu.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="4" (
-    start "files/10/Disable_News_and_Interests_on_taskbar_feature_for_all_users.reg"
+    start files\10\Disable_News_and_Interests_on_taskbar_feature_for_all_users.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="5" (
-    start "files/10/Enable_News_and_Interests_on_taskbar_feature_for_all_users.reg"
+    start files\10\Enable_News_and_Interests_on_taskbar_feature_for_all_users.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="6" (
-    start "files/10/disable-telemetry.ps1"
+    start files\10\disable-telemetry.ps1
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="7" (
-    start "files/10/DisableDefenderSafeMode1903Plus.bat"
+    start files\10\DisableDefenderSafeMode1903Plus.bat
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="8" (
-    start "files/10/DisableOfficeTelemetry.reg"
+    start files\10\DisableOfficeTelemetry.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="9" (
-    start "files/10/DisableOfficeTelemetryTasks.bat"
+    start files\10\DisableOfficeTelemetryTasks.bat
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="10" (
-    start "files/10/EnableGPeditinW10Home.bat"
+    start files\10\EnableGPeditinW10Home.bat
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="11" (
-    start "files/10/OneDrive_Uninstaller.bat"
+    start files\10\OneDrive_Uninstaller.bat
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="12" (
-    start "files/10/This_PC_-_Remove_3D_Objects_64-bit.reg"
+    start files\10\This_PC_-_Remove_3D_Objects_64-bit.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="13" (
-    start "files/7/InstallTakeOwnership.reg"
+    start files\7\InstallTakeOwnership.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="14" (
-    start "files/10/Activate_Windows_Old_Photo_Viewer_on_Windows_10.reg"
+    start files\10\Activate_Windows_Old_Photo_Viewer_on_Windows_10.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="15" (
@@ -282,71 +282,71 @@ echo [18] - Exit
 echo.
 set /p inpu=">>> "
 if "%inpu%"=="1" (
-    start "files/10/remove_ini_cache.reg"
+    start files\10\remove_ini_cache.reg
     ping -n 3 127.0.0.1 >NUL
     goto start 
 ) else if "%inpu%"=="2" (
-    start "files/10/add_ini_cache.reg"
+    start files\10\add_ini_cache.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="3" (
-    start "files/10/Add_Copy_path_to_context_menu.reg"
+    start files\10\Add_Copy_path_to_context_menu.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="4" (
-    start "files/11/old_context_menu.reg"
+    start files\11\old_context_menu.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="5" (
-    start "files/11/del_old_context_menu.reg"
+    start files\11\del_old_context_menu.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="6" (
-    start "files/11/windows_10_taskbar.reg"
+    start files\11\windows_10_taskbar.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="7" (
-    start "files/11/remove_10_taskbar.reg"
+    start files\11\remove_10_taskbar.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="8" (
-    start "files/11/disable_search.reg"
+    start files\11\disable_search.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="9" (
-    start "files/11/enable_search.reg"
+    start files\11\enable_search.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="10" (
-    start "files/11/small_icons.reg"
+    start files\11\small_icons.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="11" (
-    start "files/11/remove_small_icons.reg"
+    start files\11\remove_small_icons.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="12" (
-    start "files/10/DisableDefenderSafeMode1903Plus.bat"
+    start files\10\DisableDefenderSafeMode1903Plus.bat
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="13" (
-    start "files/10/DisableOfficeTelemetry.reg"
+    start files\10\DisableOfficeTelemetry.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="14" (
-    start "files/10/DisableOfficeTelemetryTasks.bat"
+    start files\10\DisableOfficeTelemetryTasks.bat
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="15" (
-    start "files/10/OneDrive_Uninstaller.bat"
+    start files\10\OneDrive_Uninstaller.bat
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="16" (
-    start "files/10/This_PC_-_Remove_3D_Objects_64-bit.reg"
+    start files\10\This_PC_-_Remove_3D_Objects_64-bit.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="17" (
-    start "files/7/InstallTakeOwnership.reg"
+    start files\7\InstallTakeOwnership.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="18" (
