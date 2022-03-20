@@ -31,22 +31,25 @@ if %errorlevel%==0 (
 :start
 echo Enter a one:
 echo.
-echo [1] - Windows XP Tweaks
-echo [2] - Windows 7 Tweaks
-echo [3] - Windows 10 Tweaks
-echo [4] - Windows 11 tweaks
-echo [5] - Exit
+echo [1] - Windows 2000 Tweaks
+echo [2] - Windows XP Tweaks
+echo [3] - Windows 7 Tweaks
+echo [4] - Windows 10 Tweaks
+echo [5] - Windows 11 tweaks
+echo [6] - Exit
 echo.
 set /p ent=">>> "
 if "%ent%"=="1" (
-   goto windowsxp
+   goto windows2000
 ) else if "%ent%"=="2" (
-   goto windows7
+   goto windowsxp
 ) else if "%ent%"=="3" (
-   goto windows10
+   goto windows7
 ) else if "%ent%"=="4" (
-   goto windows11
+   goto windows10
 ) else if "%ent%"=="5" (
+   goto windows11
+) else if "%ent%"=="6" (
    echo Bye!!
    ping -n 3 127.0.0.1 >NUL
    exit
@@ -354,5 +357,65 @@ if "%inpu%"=="1" (
 ) else (
    goto windowsxp
 )
+
+:windows2000
+echo Windows 2000 Tweaks:
+echo.
+echo [1] - Enable compatibility tab
+echo [2] - Disable compatibility tab
+echo [3] - Enable Split Explorer
+echo [4] - Disable Split Explorer
+echo [5] - Explorer Slowdowns LAN Fix
+echo [6] - Explorer Slowdowns Media Fix
+echo [7] - Open with notepad Fix
+echo [8] - xdsl/cable modem speed
+echo [9] - Enable spontaneoud reboot (Autoreboot)
+echo [10] - Disable spontaneoud reboot (Autoreboot)
+echo [11] - Exit to menu
+echo.
+set /p input=">>> "
+if "%input%"=="1" (
+    start files\2000\enable_compatibility_tab.bat
+
+) else if "%input%"=="2" (
+    start files\2000\disable_comp_tab.bat
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%input%"=="3" (
+    start files\2000\enable_split_explorer.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%input%"=="4" (
+    start files\2000\disable_split_explorer.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%input%"=="5" (
+    start files\2000\explorer_slowdowns_LAN.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%input%"=="6" (
+    start files\2000\explorer_slowdowns_media.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%input%"=="7" (
+    start files\2000\open_with_notepad_fix.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%input%"=="8" (
+    start files\2000\xdsl_and_cable_modem_speedup.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%input%"=="9" (
+    start files\2000\enable_spontaneous_reboot.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%input%"=="10" (
+    start files\2000\disable_spontaneous_reboot.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%input%"=="11" (
+    goto start
+) else goto windows2000
+
 
 pause
