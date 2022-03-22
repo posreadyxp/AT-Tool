@@ -5,6 +5,8 @@ echo.
 echo Repository: https://github.com/posreadyxp/AT-Tool
 echo.
 
+set path_tf=%~dp0
+
 if %errorlevel%==0 (
    goto start
 ) else (
@@ -60,23 +62,23 @@ echo [14] - Return to menu
 echo.
 set /p check=">>> "
 if "%check%"=="1" (
-    start files\XP\classic_controlpanel.reg
+    start %path%\files\XP\classic_controlpanel.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="2" (
-    start files\XP\new_controlpanel.reg
+    start %path%\files\XP\new_controlpanel.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="3" (
-    start files\XP\copy_big.reg
+    start %path%\files\XP\copy_big.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="4" (
-    start files\XP\del_links.reg
+    start %path%\files\XP\del_links.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="5" (
-    start files\XP\disable_ini_cache.reg
+    start %path%\files\XP\disable_ini_cache.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="6" (
@@ -183,7 +185,9 @@ echo [11] - Onedrive uninstaller
 echo [12] - Remove 3D Objects (64-bit) (Thanks CreeperLifeYT#1267)
 echo [13] - Add Takeowner ship to context menu
 echo [14] - Activate Windows old photo viewer
-echo [15] - Exit
+echo [15] - Disable Windows Update
+echo [16] - Enable Windows Update
+echo [17] - Exit
 echo.
 set /p inp=">>> "
 if "%inp%"=="1" (
@@ -243,8 +247,14 @@ if "%inp%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="15" (
+    start %path_tf%\files\10\disable_update.bat
     goto start
-) else goto windowsxp
+) else if "%inp%"=="16" (
+    start files\10\enable_update.bat
+    goto start
+) else if "%inp%"=="17" (
+    goto start
+) else goto windows10
 
 :windows11
 echo Windows 11 tweaks:
@@ -340,7 +350,7 @@ if "%inpu%"=="1" (
 ) else if "%inpu%"=="18" (
    goto start
 ) else (
-   goto windowsxp
+   goto windows11
 )
 
 :windows2000
