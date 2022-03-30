@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; Created by: izzylaif.com
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications]
+"DisableNotifications"=dword:00000001
+"DisableEnhancedNotifications"=dword:00000001

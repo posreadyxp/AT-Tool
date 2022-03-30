@@ -187,7 +187,12 @@ echo [13] - Add Takeowner ship to context menu
 echo [14] - Activate Windows old photo viewer
 echo [15] - Disable Windows Update
 echo [16] - Enable Windows Update
-echo [17] - Exit
+echo [17] - Disable firewall notify
+echo [18] - Enable firewall notify
+echo [19] - Disable Web Search
+echo [20] - Enable Web Search
+echo [21] - Remove all folder from This PC (Downloads and etc)
+echo [22] - Exit
 echo.
 set /p inp=">>> "
 if "%inp%"=="1" (
@@ -253,6 +258,21 @@ if "%inp%"=="1" (
     start files\10\enable_update.bat
     goto start
 ) else if "%inp%"=="17" (
+    start files\10\Disable_firewall_notifications.reg
+    goto start
+) else if "%inp%"=="18" (
+    start files\10\Enable_firewall_notifications.reg
+    goto start
+) else if "%inp%"=="19" (
+    start files\10\Disable_web_search.reg
+    goto start
+) else if "%inp%"=="20" (
+    start files\10\Enable_web_search.reg
+    goto start
+) else if "%inp%"=="21" (
+    start files\10\Remove_folders_from_this_pc.reg
+    goto start
+) else if "%inp%"=="22" (
     goto start
 ) else goto windows10
 
