@@ -193,7 +193,9 @@ echo [18] - Enable firewall notify
 echo [19] - Disable Web Search
 echo [20] - Enable Web Search
 echo [21] - Remove all folder from This PC (Downloads and etc)
-echo [22] - Exit
+echo [22] - Set windows aerolite theme
+echo [23] - Return windows theme (light)
+echo [24] - Exit
 echo.
 set /p inp=">>> "
 if "%inp%"=="1" (
@@ -274,6 +276,12 @@ if "%inp%"=="1" (
     start files\10\Remove_folders_from_this_pc.reg
     goto start
 ) else if "%inp%"=="22" (
+    start files\10\AeroLite.theme
+    goto start
+) else if "%inp%"=="23" (
+    start files\10\aero.theme
+    goto start
+) else if "%inp%"=="24" (
     goto start
 ) else goto windows10
 
@@ -297,7 +305,9 @@ echo [14] - Disable Office telemetry (tasks)
 echo [15] - Onedrive uninstaller
 echo [16] - Remove 3D Objects (64-bit) (Thanks CreeperLifeYT#1267)
 echo [17] - Add Takeowner ship to context menu
-echo [18] - Exit
+echo [18] - Set windows aerolite theme
+echo [19] - Return windows theme (light)
+echo [20] - Exit
 echo.
 set /p inpu=">>> "
 if "%inpu%"=="1" (
@@ -369,6 +379,12 @@ if "%inpu%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="18" (
+    start files\10\AeroLite.theme
+    goto start
+) else if "%inpu%"=="19" (
+    start files\10\aero.theme
+    goto start
+) else if "%inpu%"=="20" (
    goto start
 ) else (
    goto windows11
