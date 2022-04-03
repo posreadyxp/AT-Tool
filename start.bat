@@ -308,7 +308,7 @@ if "%inp%"=="1" (
     start files\10\bsod_ctrl_scroll.reg
 ) else if "%inp%"=="31" (
     start files\10\remove_bsod_c_scroll.reg
-) else if "%inp%"=="24" (
+) else if "%inp%"=="32" (
     goto start
 ) else goto windows10
 
