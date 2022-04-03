@@ -300,14 +300,19 @@ if "%inp%"=="1" (
     goto start
 ) else if "%inp%"=="27" (
     start files\10\del_dim_desktop_wall.reg
+    goto start
 ) else if "%inp%"=="28" (
     start files\10\disable_shake.reg
+    goto start
 ) else if "%inp%"=="29" (
     start files\10\enable_shake.reg
+    goto start
 ) else if "%inp%"=="30" (
     start files\10\bsod_ctrl_scroll.reg
+    goto start
 ) else if "%inp%"=="31" (
     start files\10\remove_bsod_c_scroll.reg
+    goto start
 ) else if "%inp%"=="32" (
     goto start
 ) else goto windows10
