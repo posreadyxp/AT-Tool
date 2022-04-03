@@ -195,7 +195,15 @@ echo [20] - Enable Web Search
 echo [21] - Remove all folder from This PC (Downloads and etc)
 echo [22] - Set windows aerolite theme
 echo [23] - Return windows theme (light)
-echo [24] - Exit
+echo [24] - Add alt tab transperent
+echo [25] - Remove alt tab transperent
+echo [26] - Enable DIM Desktop wallpaper (45%)
+echo [27] - Delete DIM Desktop wallpaper
+echo [28] - Disable Shake
+echo [29] - Enable Shake
+echo [30] - BSoD on ctrl + scroll
+echo [31] - Disable BSoD on ctrl + scroll
+echo [32] - Exit
 echo.
 set /p inp=">>> "
 if "%inp%"=="1" (
@@ -281,6 +289,25 @@ if "%inp%"=="1" (
 ) else if "%inp%"=="23" (
     start files\10\aero.theme
     goto start
+) else if "%inp%"=="24" (
+    start files\10\add_alt_tab_transp.reg
+    goto start
+) else if "%inp%"=="25" (
+    start files\10\del_alt_tab_transp.reg
+    goto start
+) else if "%inp%"=="26" (
+    start files\10\dim_desktop_wall.reg
+    goto start
+) else if "%inp%"=="27" (
+    start files\10\del_dim_desktop_wall.reg
+) else if "%inp%"=="28" (
+    start files\10\disable_shake.reg
+) else if "%inp%"=="29" (
+    start files\10\enable_shake.reg
+) else if "%inp%"=="30" (
+    start files\10\bsod_ctrl_scroll.reg
+) else if "%inp%"=="31" (
+    start files\10\remove_bsod_c_scroll.reg
 ) else if "%inp%"=="24" (
     goto start
 ) else goto windows10
