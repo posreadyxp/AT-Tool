@@ -67,7 +67,7 @@ if "%check%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="2" (
-    start    files\XP\new_controlpanel.reg
+    start files\XP\new_controlpanel.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="3" (
