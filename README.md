@@ -1,6 +1,6 @@
 # AT-Tool
 
-Automized tool for tweaks your system
+Automized tool for tweaks your system.
 
 **Tweaks for:**
 
@@ -16,8 +16,8 @@ You need start bat file with administrator privileges! (supports Windows 2000, X
 
 **Can I help with it?**
 
-- Yes. You can add tweak('s) for program.
+- Yes. You can add tweak('s) for this script.
 
 **How?**
 
-For help, please, create pull request or issues with tweaks-file or batch file fix
+For help, please, create pull request or issues with tweaks-file or batch file fix.
