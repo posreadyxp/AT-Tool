@@ -12,13 +12,12 @@ Automized tool for tweaks your system
 
 **How To Use?**
 
-You need start bat file (in cmd) with administrator privileges! (supports Windows 2000, XP, 7, 8, 10)
+You need start bat file with administrator privileges! (supports Windows 2000, XP, 7, 8, 10)
 
-**How I help with it?**
+**Can I help with it?**
 
 - Yes. You can add tweak('s) for program.
 
-For help, please, create pull request or issues with tweaks-file =)
+**How?**
 
-
-(I don't know English, sorryy)
+For help, please, create pull request or issues with tweaks-file or batch file fix
