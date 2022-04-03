@@ -6,6 +6,7 @@ echo Repository: https://github.com/posreadyxp/AT-Tool
 echo.
 
 set path_tf=%~dp0
+cd /d %path_tf%
 
 if %errorlevel%==0 (
    goto start
@@ -62,23 +63,23 @@ echo [14] - Return to menu
 echo.
 set /p check=">>> "
 if "%check%"=="1" (
-    start %path%\files\XP\classic_controlpanel.reg
+    start files\XP\classic_controlpanel.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="2" (
-    start %path%\files\XP\new_controlpanel.reg
+    start    files\XP\new_controlpanel.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="3" (
-    start %path%\files\XP\copy_big.reg
+    start files\XP\copy_big.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="4" (
-    start %path%\files\XP\del_links.reg
+    start files\XP\del_links.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="5" (
-    start %path%\files\XP\disable_ini_cache.reg
+    start files\XP\disable_ini_cache.reg
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="6" (
@@ -216,7 +217,7 @@ if "%inp%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="6" (
-    start files\10\disable-telemetry.ps1
+    powershell files\10\disable-telemetry.ps1
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="7" (
@@ -252,7 +253,7 @@ if "%inp%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="15" (
-    start %path_tf%\files\10\disable_update.bat
+    start files\10\disable_update.bat
     goto start
 ) else if "%inp%"=="16" (
     start files\10\enable_update.bat
