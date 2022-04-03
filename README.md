@@ -12,7 +12,7 @@ Automized tool for tweaks your system.
 
 **How To Use?**
 
-You need start bat file with administrator privileges! (supports Windows 2000, XP, 7, 8, 10)
+You need start bat file with an administrator privileges! (supports Windows 2000, XP, 7, 8, 10)
 
 **Can I help with it?**
 
