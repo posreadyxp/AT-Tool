@@ -20,4 +20,4 @@ You need start bat file with administrator privileges! (supports Windows 2000, X
 
 **How?**
 
-For help, please, create pull request or issues with tweaks-file or batch file fix.
+For help, please, create pull request or issue with tweaks-file or batch file fix.
