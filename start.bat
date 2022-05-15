@@ -129,7 +129,8 @@ echo [5] - Disable auto restart (BSoD)
 echo [6] - Disable "restore preview" from context menu
 echo [7] - Add TakeOwnerShip to context menu
 echo [8] - Remove Spy Updates
-echo [9] - Exit
+echo [9] - Disable globally acceleration and set default sensitivity
+echo [10] - Exit
 echo.
 set /p a=">>> "
 if "%a%"=="1" (
@@ -165,6 +166,10 @@ if "%a%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%a%"=="9" (
+    start files\7\Mouse_Fix_1.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%a%"=="10" (
     goto start
 ) else goto windows7
 
@@ -203,7 +208,8 @@ echo [28] - Disable Shake
 echo [29] - Enable Shake
 echo [30] - BSoD on ctrl + scroll
 echo [31] - Disable BSoD on ctrl + scroll
-echo [32] - Exit
+echo [32] - Disable globally acceleration and set default sensitivity
+echo [33] - Exit
 echo.
 set /p inp=">>> "
 if "%inp%"=="1" (
@@ -314,6 +320,10 @@ if "%inp%"=="1" (
     start files\10\remove_bsod_c_scroll.reg
     goto start
 ) else if "%inp%"=="32" (
+    start files\7\Mouse_Fix_1.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%inp%"=="33" (
     goto start
 ) else goto windows10
 
@@ -339,7 +349,8 @@ echo [16] - Remove 3D Objects (64-bit) (Thanks CreeperLifeYT#1267)
 echo [17] - Add Takeowner ship to context menu
 echo [18] - Set windows aerolite theme
 echo [19] - Return windows theme (light)
-echo [20] - Exit
+echo [20] - Disable globally acceleration and set default sensitivity
+echo [21] - Exit
 echo.
 set /p inpu=">>> "
 if "%inpu%"=="1" (
@@ -417,6 +428,10 @@ if "%inpu%"=="1" (
     start files\10\aero.theme
     goto start
 ) else if "%inpu%"=="20" (
+    start files\7\Mouse_Fix_1.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%inpu%"=="21" (
    goto start
 ) else (
    goto windows11
