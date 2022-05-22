@@ -10,14 +10,17 @@ cd /d %path_tf%
 
 FLTMC >NUL 2>&1 || PowerShell Start-Process -FilePath '%0' -Verb RunAs >NUL 2>&1 && EXIT /b
 FLTMC >NUL 2>&1 && GoTo OSC
+echo Run this program with administrative privileges!
+pause
+exit
+:OSC
+
+echo %errorlevel%
+pause
 
 if %errorlevel%==0 (
    goto start
 ) else (
-   echo Run this program with administrative privileges!
-   pause
-   exit
-   :OSC
    ping -n 3 127.0.0.1 >NUL
    exit
 )
