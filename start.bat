@@ -8,11 +8,12 @@ echo.
 set path_tf=%~dp0
 cd /d %path_tf%
 
+FLTMC >NUL 2>&1 || PowerShell Start-Process -FilePath '%0' -Verb RunAs >NUL 2>&1 && EXIT /b
+FLTMC >NUL 2>&1 && GoTo OSC
+
 if %errorlevel%==0 (
    goto start
 ) else (
-   FLTMC >NUL 2>&1 || PowerShell Start-Process -FilePath '%0' -Verb RunAs >NUL 2>&1 && EXIT /b
-   FLTMC >NUL 2>&1 && GoTo OSC
    echo Run this program with administrative privileges!
    pause
    exit
