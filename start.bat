@@ -15,9 +15,6 @@ pause
 exit
 :OSC
 
-echo %errorlevel%
-pause
-
 if %errorlevel%==0 (
    goto start
 ) else (
