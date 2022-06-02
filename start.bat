@@ -136,7 +136,9 @@ echo [6] - Disable "restore preview" from context menu
 echo [7] - Add TakeOwnerShip to context menu
 echo [8] - Remove Spy Updates
 echo [9] - Disable globally acceleration and set default sensitivity
-echo [10] - Exit
+echo [10] - Restore wallpaper quality to default
+echo [11] - Increase wallpaper quality
+echo [12] - Exit
 echo.
 set /p a=">>> "
 if "%a%"=="1" (
@@ -176,6 +178,14 @@ if "%a%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%a%"=="10" (
+    start files\7\Default_Wallpaper_Quality.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%a%"=="11" (
+    start files\7\Increase_Wallpaper_Quality.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%a%"=="12" (
     goto start
 ) else goto windows7
 
@@ -215,7 +225,9 @@ echo [29] - Enable Shake
 echo [30] - BSoD on ctrl + scroll
 echo [31] - Disable BSoD on ctrl + scroll
 echo [32] - Disable globally acceleration and set default sensitivity
-echo [33] - Exit
+echo [33] - Restore wallpaper quality to default
+echo [34] - Increase wallpaper quality
+echo [35] - Exit
 echo.
 set /p inp=">>> "
 if "%inp%"=="1" (
@@ -330,6 +342,14 @@ if "%inp%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="33" (
+    start files\7\Default_Wallpaper_Quality.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%inp%"=="34" (
+    start files\7\Increase_Wallpaper_Quality.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%inp%"=="35" (
     goto start
 ) else goto windows10
 
@@ -356,7 +376,10 @@ echo [17] - Add Takeowner ship to context menu
 echo [18] - Set windows aerolite theme
 echo [19] - Return windows theme (light)
 echo [20] - Disable globally acceleration and set default sensitivity
-echo [21] - Exit
+echo [21] - Remove all folder from This PC (Downloads and etc)
+echo [22] - Restore wallpaper quality to default
+echo [23] - Increase wallpaper quality
+echo [24] - Exit
 echo.
 set /p inpu=">>> "
 if "%inpu%"=="1" (
@@ -438,6 +461,17 @@ if "%inpu%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="21" (
+    start files\10\Remove_folders_from_this_pc.reg
+    goto start
+) else if "%inpu%"=="22" (
+    start files\7\Default_Wallpaper_Quality.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%inpu%"=="23" (
+    start files\7\Increase_Wallpaper_Quality.reg
+    ping -n 3 127.0.0.1 >NUL
+    goto start
+) else if "%inpu%"=="24" (
    goto start
 ) else (
    goto windows11
