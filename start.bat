@@ -1,12 +1,10 @@
 @echo off
-
-echo AT-TOOL
-echo.
-echo Repository: https://github.com/posreadyxp/AT-Tool
-echo.
-
+SET TOOL_VERSION=0.4
 set path_tf=%~dp0
 cd /d %path_tf%
+
+:: https://stackoverflow.com/questions/13212033/get-windows-version-in-a-batch-file
+for /f "tokens=4-5 delims=. " %%i in ('ver') do SET VERSION=%%i.%%j 
 
 FLTMC >NUL 2>&1 || PowerShell Start-Process -FilePath '%0' -Verb RunAs >NUL 2>&1 && EXIT /b
 FLTMC >NUL 2>&1 && GoTo OSC
@@ -23,31 +21,33 @@ if %errorlevel%==0 (
 )
 
 :start
-echo Enter a one:
+cls
+echo AT-TOOL
 echo.
-echo [1] - Windows 2000 Tweaks
-echo [2] - Windows XP Tweaks
-echo [3] - Windows 7 Tweaks
-echo [4] - Windows 10 Tweaks
-echo [5] - Windows 11 tweaks
-echo [6] - Exit
+echo Repository: https://github.com/posreadyxp/AT-Tool
 echo.
+echo Version %TOOL_VERSION%
+echo.
+if %VERSION%==10.0 (
+    goto win1110
+) else if %VERSION%==6.1 (
+    goto windows7
+) else if %VERSION%==5.1 (
+    goto windowsxp
+) else if %VERSION%==5.0 (
+    goto windows2000
+)
+
+:win1110
+echo [1] - Windows 10 Tweaks
+echo [2] - Windows 11 tweaks
 set /p ent=">>> "
+echo %ent%
 if "%ent%"=="1" (
-   goto windows2000
+    goto windows10 
 ) else if "%ent%"=="2" (
-   goto windowsxp
-) else if "%ent%"=="3" (
-   goto windows7
-) else if "%ent%"=="4" (
-   goto windows10
-) else if "%ent%"=="5" (
-   goto windows11
-) else if "%ent%"=="6" (
-   echo Bye!!
-   ping -n 3 127.0.0.1 >NUL
-   exit
-) else goto start 
+    goto windows11
+) else goto start
 
 :windowsxp
 echo Windows XP tweaks:
@@ -65,7 +65,7 @@ echo [10] - Enable Old Logon
 echo [11] - Enable New logon
 echo [12] - Registry Done (Show info, when registry successfuly imported)
 echo [13] - Fix russian locale
-echo [14] - Return to menu
+echo [14] - Exit
 echo.
 set /p check=">>> "
 if "%check%"=="1" (
@@ -121,7 +121,7 @@ if "%check%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%check%"=="14" (
-    goto start
+    exit
 ) else goto windowsxp
 
 :windows7
@@ -138,7 +138,8 @@ echo [8] - Remove Spy Updates
 echo [9] - Disable globally acceleration and set default sensitivity
 echo [10] - Restore wallpaper quality to default
 echo [11] - Increase wallpaper quality
-echo [12] - Exit
+echo [12] - Enable Aero theme (only for Windows 7 Starter, Home Basic!)
+echo [13] - Exit
 echo.
 set /p a=">>> "
 if "%a%"=="1" (
@@ -186,7 +187,10 @@ if "%a%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%a%"=="12" (
-    goto start
+    start files\7\aero.exe
+    ping -n 3 127.0.0.1 >NUL
+) else if "%a%"=="13" (
+    exit
 ) else goto windows7
 
 
@@ -350,7 +354,7 @@ if "%inp%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inp%"=="35" (
-    goto start
+    exit
 ) else goto windows10
 
 :windows11
@@ -472,7 +476,7 @@ if "%inpu%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%inpu%"=="24" (
-   goto start
+   exit
 ) else (
    goto windows11
 )
@@ -490,7 +494,7 @@ echo [7] - Open with notepad Fix
 echo [8] - xdsl/cable modem speed
 echo [9] - Enable spontaneoud reboot (Autoreboot)
 echo [10] - Disable spontaneoud reboot (Autoreboot)
-echo [11] - Exit to menu
+echo [11] - Exit
 echo.
 set /p input=">>> "
 if "%input%"=="1" (
@@ -533,7 +537,7 @@ if "%input%"=="1" (
     ping -n 3 127.0.0.1 >NUL
     goto start
 ) else if "%input%"=="11" (
-    goto start
+    exit
 ) else goto windows2000
 
 
